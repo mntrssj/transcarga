@@ -1,0 +1,123 @@
+body{
+    background-color: rgb(17, 17, 17);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+
+
+.titulosinicio{
+    color: white;
+    position: absolute;
+    padding: 100px;
+}
+
+.regiones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    span{
+        color: white;
+        font-size: x-large;
+        
+    }
+
+    ul{
+        position: relative;
+        display: flex;
+        gap: 45px;
+    }
+
+    ul li{
+        position: relative;
+        list-style: none;
+        width: 300px;
+        height: 100px;
+        background: #1a1919;
+        border-radius: 60px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+        transition: 1s;
+    }
+
+    ul li:hover {
+    width: 180px;
+    box-shadow: 0 10px 25px rgba(88, 71, 71, 0.808);
+    }
+
+    ul li:hover::before {
+        opacity: 1;
+      }
+
+      ul li:hover::after {
+        opacity: 0.5;
+      }
+      ul li:hover ion-icon {
+        transform: scale(1.5);
+        color: #ff0606;
+        transition-delay: 0s;
+      }
+      ul li::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 60px;
+        background: linear-gradient(45deg, var(--i), var(--j));
+        opacity: 0;
+        transition: 1s;
+      }
+   
+
+}
+
+a{
+text-decoration: none;
+color: white;
+}
+header{
+    display: flex;
+    background-color: #323335;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    .logo{
+        display: flex;
+        align-items: center;
+     }
+     .logo img{
+         height: 50px;
+         margin-right: 12px;
+     }
+     nav a{
+         font-weight: 600;
+         padding-right: 11px;
+     }
+     nav a:hover{
+         color: #4f7af0;
+     }
+     
+     @media (max-width: 680px){
+         header{
+             flex-direction: column;
+         }
+         nav{
+             padding: 10px 0px;
+         }
+}
+}
+  
+.contactos{
+    font-size: large;
+    color: white;
+
+    a{
+        color: #a39c93;
+        text-decoration: none;
+    }
+
+}
